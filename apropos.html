@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui nous sommes</title>
+    <style>
+        *{
+            padding: 0;margin: 0;text-decoration: none;
+        }
+        body{
+            /* background-image: url();
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 8fr;
+            grid-template-areas: 
+            "sectionlien sectionlien sectionlien"
+            "sectionappbar sectionappbar sectionappbar"
+            "sectionbody sectionbody sectionbody";
+        }
+        .sectionlien{
+            grid-area: sectionlien;
+            width: 100%;
+            height: 44px;
+            background-color: rgba(0, 0, 0);
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            align-items: center;
+        }
+        .liena{
+            margin-left: 10px;
+        }
+        .sectionappbar{
+            grid-area: sectionappbar;
+            width: 100%;
+            background-color: rgb(237, 237, 237);
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sectionlogo sectionnavigator sectionnavigator";
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sectionlogo{
+            grid-area: sectionlogo;
+        }
+        .sectionnavigator{
+            grid-area: sectionnavigator;
+        }
+        .nagPage{
+            margin-left: 10px;
+            color: black;
+        }
+        .apropos{
+            text-decoration:underline 3px white;
+        }
+        .sectionbody{
+            grid-area: sectionbody; 
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .title{
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .spantext{
+            font-size: 32px;
+        }
+        .textApropos{
+            font-size: 18px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        @media screen and (max-width:450px) {
+            .title{
+            font-size: 26px;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        .spantext{
+            font-size: 18px;
+        }
+        .textApropos{
+            font-size: 14px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="sectionlien">
+        <a class="liena" href="mailto:atsssmmali@gmail.com"><img src="assets/icons/e-mail.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.facebook.com/Association-des-Technicien-de-Surface-secteur-de-santé-au-Mali-Ats-Ssm-113661761560428"><img src="assets/icons/facebook.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href=""><img src="assets/icons/instagram.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.tiktok.com/@atsssmmali"><img src="assets/icons/tic-tac.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://wa.me/22374616195"><img src="assets/icons/whatsapp.png" alt="" height="32px" width="32px"></a>
+    </section>
+    <section class="sectionappbar">
+        <section class="sectionlogo">
+            <img src="assets/images/logo.png" alt="" style="height:120px;width:120px;">
+        </section>
+        <section class="sectionnavigator">
+            <a class="nagPage" href="index.html">Accuiel</a>
+            <a class="apropos nagPage" href="apropos.html">A propos</a>
+            <a class="nagPage" href="services.html">Services</a>
+            <a class="nagPage" href="equipes.html">Equipes</a>
+            <a class="nagPage" href="blog.html">Blog</a>
+            <a class="nagPage" href="contact.html">Contact</a>
+        </section>
+    </section>
+    <section class="sectionbody">
+        <h1 class="title">QUI NOUS SOMMES</h1>
+        <p class="textApropos"><span class="spantext">ASSOCIATION DES TECHNICIENS DE SERFACE SECTEUR SANTE AU MALI</span>
+        </br>Est un association des Techniciens (Agent d'entretien, maintenance ou Agent de propriété et d'hygiène, au saint des structures). Il est charge du transport des malades, du nettoyage Des blocs opératoires, de l'entretien des blouses et chant opératoire...Ect.
+        </br> Nos agents de propreté en milieu hospitalier ont suivi une formation adaptée. En plus des protocoles de nettoyages conventionnels, des connaissances en chimie et microbiologie leur ont été également dispensés</p>
+    </section>
+</body>
+</html>

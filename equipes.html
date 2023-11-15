@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos equipes</title>
+    <style>
+        *{
+            padding: 0;margin: 0;text-decoration: none;
+        }
+        body{
+            /* background-image: url();
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 8fr;
+            grid-template-areas: 
+            "sectionlien sectionlien sectionlien"
+            "sectionappbar sectionappbar sectionappbar"
+            "sectionbody sectionbody sectionbody";
+        }
+        .sectionlien{
+            grid-area: sectionlien;
+            width: 100%;
+            height: 44px;
+            background-color: rgba(0, 0, 0);
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            align-items: center;
+        }
+        .liena{
+            margin-left: 10px;
+        }
+        .equipe{
+            text-decoration:underline 3px white;
+        }
+        .sectionappbar{
+            grid-area: sectionappbar;
+            width: 100%;
+            background-color: rgb(237, 237, 237);
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sectionlogo sectionnavigator sectionnavigator";
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sectionlogo{
+            grid-area: sectionlogo;
+        }
+        .sectionnavigator{
+            grid-area: sectionnavigator;
+        }
+        .nagPage{
+            margin-left: 10px;
+            color: black;
+        }
+        .sectionbody{
+            grid-area: sectionbody; 
+        }
+        .title{
+            text-align: center;
+            align-items: center;
+            font-size: 36px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .divpartenaire{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .imgpartenaire{
+            width: 150px;
+            height: 100px;
+        }
+        .sectionequipes{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .Gimgper{
+            height: 650px;
+            width: 100%;
+        }
+        .equip{
+            text-align: center;
+            align-items: center;
+            width: 150px;
+        }
+        .imgper{
+            border-radius: 5px;
+            height: 150px;
+            width: 150px;
+        }
+        .nameper{
+            font-size: 16px;
+        }
+        .foctper{
+            font-size: 12px;
+        }
+        @media screen and (max-width:450px) {
+            .title{
+            text-align: center;
+            align-items: center;
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .Gimgper{
+            height: 220px;
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="sectionlien">
+        <a class="liena" href="mailto:atsssmmali@gmail.com"><img src="assets/icons/e-mail.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.facebook.com/Association-des-Technicien-de-Surface-secteur-de-santé-au-Mali-Ats-Ssm-113661761560428"><img src="assets/icons/facebook.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href=""><img src="assets/icons/instagram.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.tiktok.com/@atsssmmali"><img src="assets/icons/tic-tac.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://wa.me/22374616195"><img src="assets/icons/whatsapp.png" alt="" height="32px" width="32px"></a>
+    </section>
+    <section class="sectionappbar">
+        <section class="sectionlogo">
+            <img src="assets/images/logo.png" alt="" style="height:120px;width:120px;">
+        </section>
+        <section class="sectionnavigator">
+            <a class="nagPage" href="index.html">Accuiel</a>
+            <a class="nagPage" href="apropos.html">A propos</a>
+            <a class="nagPage" href="services.html">Services</a>
+            <a class="equipe nagPage" href="equipes.html">Equipes</a>
+            <a class="nagPage" href="blog.html">Blog</a>
+            <a class="nagPage" href="contact.html">Contact</a>
+        </section>
+    </section>
+    <section class="sectionbody">
+        <h1 class="title">Nos Partenaires</h1>
+        <div class="divpartenaire">
+            <img class="imgpartenaire" src="assets/images/partenaires/INPS.jpg" alt="">
+            <img class="imgpartenaire" src="assets/images/partenaires/minisairedelasante.jpeg" alt="">
+            <img class="imgpartenaire" src="assets/images/partenaires/oms.jpg" alt="">
+        </div>
+        <h1 class="title">Nos Equipes</h1>
+        <div class="Gequip">
+            <img src="assets/images/calerie/img1.jpg" alt="" class="Gimgper">
+        </div>
+        <section class="sectionequipes">
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Mamadou Ballo</h2>
+                    <p class="foctper">Président</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Moussa Dembele</h2>
+                    <p class="foctper">Vice-Président</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Moussa Keita</h2>
+                    <p class="foctper">Secrétaire Général</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Aminata Traoré</h2>
+                    <p class="foctper">Trésoies Général</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Fousseyni Fofana</h2>
+                    <p class="foctper">Trésorier Adjoint 1e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Sabou Sidibé</h2>
+                    <p class="foctper">Trésorier Adjoint 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Seydou Traoré</h2>
+                    <p class="foctper">Commissaire aux Comptes</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Aboubacar Ongoiba</h2>
+                    <p class="foctper">Commissaire aux Comptes Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Lalaicha Sidibé</h2>
+                    <p class="foctper">Commissaire aux Comptes Adjoint 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Moussa Kassogue</h2>
+                    <p class="foctper">Secrétaire Administratif</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Korotoumou Traoré</h2>
+                    <p class="foctper">Secrétaire Administratif Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Ibrahim Samake</h2>
+                    <p class="foctper">Secretaire Administratif Adjoint 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Christophe Tienou</h2>
+                    <p class="foctper">Secretaire Administratif Adjoint 3e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Issa Diarra</h2>
+                    <p class="foctper">Secrétaire A LA Communication</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Vegeuwélé Camara</h2>
+                    <p class="foctper">Secrétaire A LA Communication Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Fatoumata Dicko Sidibé</h2>
+                    <p class="foctper">Secrétaire A L'organisation</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Mariam Dagnoko</h2>
+                    <p class="foctper">Secrétaire A L'organisation Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Seyleymane Maiga</h2>
+                    <p class="foctper">Secrétaire A L'organisation 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Hawa Sidibé</h2>
+                    <p class="foctper">Secrétaire A L'organisation 3e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Jean André Toe</h2>
+                    <p class="foctper">Secrétaire Au Conflit</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Daouda Sogoba</h2>
+                    <p class="foctper">Secrétaire Au Conflit Adjont</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Moussa Maiga</h2>
+                    <p class="foctper">Secrétaire Aux Relation Extérieures</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Djenebou Dembele</h2>
+                    <p class="foctper">Secrétaire Aux Relation Extérieures Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Baba Touré</h2>
+                    <p class="foctper">Secrétaire Aux Relation Extérieures Adjoint 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Daouda Dara</h2>
+                    <p class="foctper">Secrétaire De La Santé Et L'Hygiène</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Aminata Keita</h2>
+                    <p class="foctper">Secrétaire De La Santé Et L'Hygiène Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Djedi Diallo</h2>
+                    <p class="foctper">Secrétaire De La Santé Et L'Hygiène 2e</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Dramane Sogoba</h2>
+                    <p class="foctper">Secrétaire Aux Affaire Sociales</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Sounkalo Coulibaly</h2>
+                    <p class="foctper">Secrétaire Aux Affaire Sociales Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Maimouna Sanogo</h2>
+                    <p class="foctper">Secrétaire De La Promotion Féminine Et Des Enfants</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Sadio Touré</h2>
+                    <p class="foctper">Secrétaire De La Promotion Féminine Et Des Enfants Adjoint</p>
+                </div>
+            </div>
+            <div class="equip">
+                <img src="assets/retirer-photo-de-profil-facebook.png" alt="" class="imgper">
+                <div class="name">
+                    <h2 class="nameper">Oumar Keita</h2>
+                    <p class="foctper">Secrétaire Aux Affaires Religieuses des Cultes</p>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+    </section>
+</body>
+</html>

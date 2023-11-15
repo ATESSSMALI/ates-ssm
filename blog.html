@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            padding: 0;margin: 0;text-decoration: none;
+        }
+        body{
+            /* background-image: url();
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 8fr;
+            grid-template-areas: 
+            "sectionlien sectionlien sectionlien"
+            "sectionappbar sectionappbar sectionappbar"
+            "sectionbody sectionbody sectionbody";
+        }
+        .sectionlien{
+            grid-area: sectionlien;
+            width: 100%;
+            height: 44px;
+            background-color: rgba(0, 0, 0);
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            align-items: center;
+        }
+        .liena{
+            margin-left: 10px;
+        }
+        .blog{
+            text-decoration:underline 3px white;
+        }
+        .sectionappbar{
+            grid-area: sectionappbar;
+            width: 100%;
+            background-color: rgb(237, 237, 237);
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sectionlogo sectionnavigator sectionnavigator";
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sectionlogo{
+            grid-area: sectionlogo;
+        }
+        .sectionnavigator{
+            grid-area: sectionnavigator;
+        }
+        .nagPage{
+            margin-left: 10px;
+            color: black;
+        }
+        .sectionbody{
+            grid-area: sectionbody; 
+        }
+        .title{
+            font-size: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .bodycelerie{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "calerie1 calerie1"
+            "calerie2 calerie2"
+            "calerie3 calerie3";
+        }
+        .calerie1{
+            grid-area: calerie1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .imageCalerie{
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+        }
+        .calerie2{
+            grid-area: calerie2;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .imgcelery{
+            width: 220px;
+            height: 220px;
+            border-radius: 5px;
+        }
+        .calerie3{
+            grid-area: calerie3;
+            background-color: yellow;  
+        }
+       @media screen and (max-width:570px) {
+        .title{
+            font-size: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .calerie1{
+            grid-area: calerie1;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .imageCalerie{
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .imgcelery{
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <section class="sectionlien">
+        <a class="liena" href="mailto:atsssmmali@gmail.com"><img src="assets/icons/e-mail.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.facebook.com/Association-des-Technicien-de-Surface-secteur-de-santé-au-Mali-Ats-Ssm-113661761560428"><img src="assets/icons/facebook.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href=""><img src="assets/icons/instagram.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.tiktok.com/@atsssmmali"><img src="assets/icons/tic-tac.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://wa.me/22374616195"><img src="assets/icons/whatsapp.png" alt="" height="32px" width="32px"></a>
+    </section>
+    <section class="sectionappbar">
+        <section class="sectionlogo">
+            <img src="assets/images/logo.png" alt="" style="height:120px;width:120px;">
+        </section>
+        <section class="sectionnavigator">
+            <a class="nagPage" href="index.html">Accuiel</a>
+            <a class="nagPage" href="apropos.html">A propos</a>
+            <a class="nagPage" href="services.html">Services</a>
+            <a class="nagPage" href="equipes.html">Equipes</a>
+            <a class="blog nagPage" href="blog.html">Blog</a>
+            <a class="contact nagPage" href="contact.html">Contact</a>
+        </section>
+    </section>
+    <section class="sectionbody">
+        <h1 class="title">Blog</h1>
+        <section class="bodycelerie">
+            <section class="calerie1">
+                <img class="imageCalerie" src="assets/images/calerie/img2.jpg" alt="">
+                <p class="textCalerie">Association des techniciens de surface secteur de santé au mali a l'hopital du point G, pour la journée de la salubrité 2éme étape le 10 juin 2023</br>
+                La salibrité hospitaliere demeure cruciale pour garantir un environnement sain et sécurisé. Des normes strictes régissent la proprété des locaux, la gestion des déchets médicaux et la désinfection réguliere. Ces pratiques visent a prévenir la propagation des infections nosocomiales, assurant ainsi la sécurité des patients et du personnel.
+                </p>
+            </section>
+            <section class="calerie2">
+               <img class="imgcelery" src="assets/images/calerie/img3.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img4.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img5.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img6.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img7.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img8.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img9.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img10.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img11.jpg" alt="">
+               <img class="imgcelery" src="assets/images/calerie/img12.jpg" alt="">
+            </section>
+        </section>
+    </section>
+</body>
+</html>

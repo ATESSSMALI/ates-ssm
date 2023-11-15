@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Contact</title>
+    <style>
+        *{
+            padding: 0;margin: 0;text-decoration: none;
+        }
+        body{
+            /* background-image: url();
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 8fr;
+            grid-template-areas: 
+            "sectionlien sectionlien sectionlien"
+            "sectionappbar sectionappbar sectionappbar"
+            "sectionbody sectionbody sectionbody";
+        }
+        .sectionlien{
+            grid-area: sectionlien;
+            width: 100%;
+            height: 44px;
+            background-color: rgba(0, 0, 0);
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            align-items: center;
+        }
+        .liena{
+            margin-left: 10px;
+        }
+        .contact{
+            text-decoration:underline 3px white;
+        }
+        .sectionappbar{
+            grid-area: sectionappbar;
+            width: 100%;
+            background-color: rgb(237, 237, 237);
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sectionlogo sectionnavigator sectionnavigator";
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sectionlogo{
+            grid-area: sectionlogo;
+        }
+        .sectionnavigator{
+            grid-area: sectionnavigator;
+        }
+        .nagPage{
+            margin-left: 10px;
+            color: black;
+        }
+        .sectionbody{
+            grid-area: sectionbody; 
+        }
+        .title{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 36px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .containerInput{
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .boxInput{
+            width: 100%;
+        }
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+           width: 60%;
+           height: 20px;
+           border-radius: 5px;
+           text-align: center;
+        }
+        .div2{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .imessage{
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .envoyer{
+            color: white;
+            height: 25px;
+            background-color: rgb(40, 42, 201);
+
+        }
+        .adreesses{
+            display: grid;
+            margin-bottom: 20px;
+        }
+        .divtel{
+            display: flex;
+            justify-content:center;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+        .imgtel{
+            margin-right: 10px;
+            height: 32px;
+            width: 32px;
+        }
+        @media screen and (max-width:450px) {
+            .title{
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 26px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <section class="sectionlien">
+        <a class="liena" href="mailto:atsssmmali@gmail.com"><img src="assets/icons/e-mail.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.facebook.com/Association-des-Technicien-de-Surface-secteur-de-santé-au-Mali-Ats-Ssm-113661761560428"><img src="assets/icons/facebook.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href=""><img src="assets/icons/instagram.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.tiktok.com/@atsssmmali"><img src="assets/icons/tic-tac.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://wa.me/22374616195"><img src="assets/icons/whatsapp.png" alt="" height="32px" width="32px"></a>
+    </section>
+    <section class="sectionappbar">
+        <section class="sectionlogo">
+            <img src="assets/images/logo.png" alt="" style="height:120px;width:120px;">
+        </section>
+        <section class="sectionnavigator">
+            <a class="nagPage" href="index.html">Accuiel</a>
+            <a class="nagPage" href="apropos.html">A propos</a>
+            <a class="nagPage" href="services.html">Services</a>
+            <a class="nagPage" href="equipes.html">Equipes</a>
+            <a class="nagPage" href="blog.html">Blog</a>
+            <a class="contact nagPage" href="contact.html">Contact</a>
+        </section>
+    </section>
+    <section class="sectionbody">
+        <h1 class="title">Contact Nous</h1>
+        <div class="adreesses">
+            <div class="divtel">
+                <img class="imgtel" src="assets/icons/appel.png" alt="">
+                <a class="tel" href="tel:+22374616195">223 74-61-61-95</a>
+            </div>
+            <div class="divtel">
+                <img class="imgtel" src="assets/icons/appel.png" alt="">
+                <a class="tel" href="tel:+22390343699">223 90-34-36-99</a>
+            </div>
+        </div>
+        <section id="joindre" class="joindre">
+            <div class="containerInput">
+                <form method="post" class="boxInput">
+                    <input type="text" class="iname" id="name" placeholder="Nom et Prenom">
+                    <input type="email" class="imail" id="mail" placeholder="Mail">
+                    <input type="text" class="iphone" id="phone" placeholder="Telephone">
+                    <div class="div2">
+                        <textarea id="message" placeholder="Message" class="imessage" cols="30" rows="10"></textarea>
+                    <input type="submit" onclick="sendToWhatsapp()" class="envoyer" value="ENVOYER">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!-- Whatsapp -->
+<script src="https://webaxen.com/js/jquery3.6.min.js"></script>
+<script src="https://webaxen.com/js/bootstrap.bundle.min.js"></script>
+<script src="https://webaxen.com/js/owl.carousel.min.js"></script>
+<script src="https://webaxen.com/js/script.js"></script>
+<script>
+    function sendToWhatsapp(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("mail").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+        var url = "https://wa.me/22374616195?text="
++"*Name :* "+name+"%0a"
++"*Email :* "+email+"%0a"
++"*Phone :* "+phone+"%0a"
++"*Message :* "+message;
+ 
+window.open(url,'_blank').focus();
+}
+</script>
+</body>
+</html>

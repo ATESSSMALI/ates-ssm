@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos services</title>
+    <style>
+        *{
+            padding: 0;margin: 0;text-decoration: none;
+        }
+        body{
+            /* background-image: url();
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 8fr;
+            grid-template-areas: 
+            "sectionlien sectionlien sectionlien"
+            "sectionappbar sectionappbar sectionappbar"
+            "sectionbody sectionbody sectionbody";
+        }
+        .sectionlien{
+            grid-area: sectionlien;
+            width: 100%;
+            height: 44px;
+            background-color: rgba(0, 0, 0);
+            display: flex;
+            justify-content: start;
+            text-align: center;
+            align-items: center;
+        }
+        .liena{
+            margin-left: 10px;
+        }
+        .service{
+            text-decoration:underline 3px white;
+        }
+        .sectionappbar{
+            grid-area: sectionappbar;
+            width: 100%;
+            background-color: rgb(237, 237, 237);
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "sectionlogo sectionnavigator sectionnavigator";
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .sectionlogo{
+            grid-area: sectionlogo;
+        }
+        .sectionnavigator{
+            grid-area: sectionnavigator;
+        }
+        .nagPage{
+            margin-left: 10px;
+            color: black;
+        }
+        .sectionbody{
+            grid-area: sectionbody; 
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+        .services{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .divservice{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 200px;
+            margin: 5px;
+
+        }
+        .imgronde{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+        }
+        .text{
+            margin-top: 10px;
+        }
+        @media screen and (max-width:450px) {
+            .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+            .divservice{
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 150px;
+            margin: 1px;
+
+        }
+        .imgronde{
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+        }
+        }
+    </style>
+</head>
+<body> 
+    <section class="sectionlien">
+        <a class="liena" href="mailto:atsssmmali@gmail.com"><img src="assets/icons/e-mail.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.facebook.com/Association-des-Technicien-de-Surface-secteur-de-santé-au-Mali-Ats-Ssm-113661761560428"><img src="assets/icons/facebook.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href=""><img src="assets/icons/instagram.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://www.tiktok.com/@atsssmmali"><img src="assets/icons/tic-tac.png" alt="" height="32px" width="32px"></a>
+        <a class="liena" href="https://wa.me/22374616195"><img src="assets/icons/whatsapp.png" alt="" height="32px" width="32px"></a>
+    </section>
+    <section class="sectionappbar">
+        <section class="sectionlogo">
+            <img src="assets/images/logo.png" alt="" style="height:120px;width:120px;">
+        </section>
+        <section class="sectionnavigator">
+            <a class="nagPage" href="index.html">Accuiel</a>
+            <a class="nagPage" href="apropos.html">A propos</a>
+            <a class="service nagPage" href="services.html">Services</a>
+            <a class="nagPage" href="equipes.html">Equipes</a>
+            <a class="nagPage" href="blog.html">Blog</a>
+            <a class="nagPage" href="contact.html">Contact</a>
+        </section>
+    </section>
+    <section class="sectionbody">
+        <h1 class="title">Nos Services</h1>
+        <div class="services">
+            <div class="divservice">
+                <img class="imgronde" src="assets/images/services/nottoyage.jpg" alt="">
+                <h4 class="text">Bionettoyage Hôpitaux</h4>
+            </div>
+            <div class="divservice">
+                <img class="imgronde" src="assets/images/services/aidons.jpg" alt="">
+                <h4 class="text">Aidez Les Patients</h4>
+            </div>
+            <div class="divservice">
+                <img class="imgronde" src="assets/images/services/technicien.jpeg" alt="">
+                <h4 class="text">Techniciens</h4>
+            </div>
+            <div class="divservice">
+                <img class="imgronde" src="assets/images/services/ambulance.jpg" alt="">
+                <h4 class="text">Solutions d’accès pour les établissements dans le secteur de la santé</h4>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
